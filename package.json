@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "lint": "eslint --quiet .",
     "lint_project_fix": "eslint --quiet --fix .",
-    "test": "react-scripts test"
+    "test": "cross-env CI=true react-scripts test --env=jsdom"
   },
   "pre-commit": [
     "lint",
